@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <font face="Times New Roman">
+        <!-- Se tiene el formulario de contacto dentro de un articulo
+         con cada entrada de texto teniendo un tipo distinto y finalmente el
+         boton de enviar que en este caso manda a la pagina principal-->
+        <article>
+            <h2>Formulario de contacto</h2>
+            <form action="index.html">
+                <label for="name"> Nombre: </label> <br>
+                <!-- La siguiente linea de pattern esta puesta para que no se puedan ingresar
+                 ni numeros ni caracteres especiales en la parte del nombre-->
+                <input type="text" name="name" id="name" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="El nombre no puede contener números ni caracteres especiales."> <br>                <br>
+                <label for="email"> Correo Electronico: </label> <br>
+                <input type="email" name="email" id="email" required> <br>
+                <br>
+                <label for="Mensaje">Mensaje:</label> <br>
+                <textarea name="Mensaje" id="Mensaje" rows="4" cols="20" required></textarea> <br>
+                <br>
+                <input type="submit" value="Enviar"> 
+            </form>
+        </article>
+        <footer>
+            <p> © 2025 Victor Alejandro Leal Dominguez</p>
+            <table>
+                <td> <a href="index.html#Perfil"> Perfil</a> |</td>
+                <td> <a href="index.html#Experiencia"> Experiencia</a> |</td>
+                <td> <a href="index.html#Educacion"> Educacion</a> |</td>
+                <td> <a href="index.html#Contacto"> Contacto</a></td>
+            </table>
+        </footer>
+    </font>
+</body>
+</html>
